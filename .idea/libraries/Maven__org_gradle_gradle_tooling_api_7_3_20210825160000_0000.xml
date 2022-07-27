@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.gradle:gradle-tooling-api:7.3-20210825160000+0000">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/gradle/gradle-tooling-api/7.3-20210825160000+0000/gradle-tooling-api-7.3-20210825160000+0000.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/gradle/gradle-tooling-api/7.3-20210825160000+0000/gradle-tooling-api-7.3-20210825160000+0000-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/gradle/gradle-tooling-api/7.3-20210825160000+0000/gradle-tooling-api-7.3-20210825160000+0000-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
