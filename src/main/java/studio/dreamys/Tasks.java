@@ -22,6 +22,7 @@ public class Tasks {
     public static String appName;
 
     public static void fullSetup() {
+        separator();
         cloneMainRepo();
         separator();
         //server
@@ -105,7 +106,7 @@ public class Tasks {
             log("Please enter the database DB url: (leave it empty if you're not using it) [4/9]");
             String dbUrl = sc.nextLine();
             if (dbUrl.equals("")) {
-                replaceInFile(serverPath, "usingDB = true", "usingDB = false");
+                replaceInFile(serverPath, "usingMongoDB = true", "usingMongoDB = false");
             }
 
             log("Changing config vars... [4/9]");
