@@ -23,15 +23,23 @@ public class Tasks {
 
     public static void fullSetup() {
         cloneMainRepo();
+        separator();
         //server
         initializeServerRepo();
+        separator();
         createHerokuApp();
+        separator();
         changeConfigVars();
+        separator();
         deployHerokuApp();
+        separator();
         //mod
         setupDecompWorkspace();
+        separator();
         changeModServerURL();
+        separator();
         build();
+        separator();
         killDaemons();
         //extra
     }
@@ -58,7 +66,7 @@ public class Tasks {
         try {
             log("Initializing server repository... [2/9]");
 
-            Git.init().setDirectory(serverPath.toFile()).call();
+            Git.init().setDirectory(new File(path + "\\server")).call();
 
             log("Server repository initialized successfully. [2/9]");
         } catch (Exception e) {
@@ -119,8 +127,8 @@ public class Tasks {
         try {
             log("Deploying heroku app... [5/9]");
 
-            Git.open(serverPath.toFile()).add().addFilepattern(".").call();
-            Git.open(serverPath.toFile()).commit().setMessage("Hephaestus Autocommit").call();
+            Git.open(new File(path + "\\server")).add().addFilepattern(".").call();
+            Git.open(new File(path + "\\server")).commit().setMessage("Hephaestus Autocommit").call();
 //            Git.open(new File(path + "\\server")).push().setRemote("heroku").call(); //TODO: find out why this doesn't work but the one below does
             Process p = Runtime.getRuntime().exec("git push heroku master", null, new File(path + "\\server"));
             p.waitFor();
@@ -223,5 +231,9 @@ public class Tasks {
 
     public static void log(String message) {
         System.out.println("[Hephaestus] " + message);
+    }
+
+    public static void separator() {
+        System.out.println("--------------------------------------------------------------------------------------------------------------------");
     }
 }
