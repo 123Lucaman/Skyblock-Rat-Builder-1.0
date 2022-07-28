@@ -2,10 +2,9 @@
 
 # Hephaestus
 
-<figure>
 <img src="https://static.wikia.nocookie.net/godofhighschool/images/c/c8/Hephaestus_2.jpg" alt="logo" width="25%" />
-<figcaption>Image: God of Highschool</figcaption>
-</figure>
+
+<i>Hephaestus from God of Highschool</i>
 
 **Hephaestus - R.A.T Forger: completely setup R.A.T + host it on heroku with a single Java console application.**
 
